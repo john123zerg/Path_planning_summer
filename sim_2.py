@@ -85,7 +85,7 @@ def plot_path(grid, path, obstacles):
     plt.show()
 
 import random
-#random.seed(0)
+random.seed(77)
 # Grid size
 size = (50, 50)
 
