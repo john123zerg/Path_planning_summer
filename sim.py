@@ -79,11 +79,15 @@ def plot_path(grid, path):
     ani = FuncAnimation(fig, update, frames=len(path), interval=200)
     plt.show()
 
+import random
+random.seed(0)
 # Grid size
 size = (10, 10)
 
-# Define obstacles as a list of (x, y) positions
-obstacles = [(3, 3), (3, 4), (3, 5), (4, 5), (5, 5), (6, 5)]
+# Number of obstacles
+num_obstacles = 40
+
+obstacles = [(random.randint(0, size[0]-1), random.randint(0, size[1]-1)) for _ in range(num_obstacles)]
 
 # Start and end positions
 start = (0, 0)
@@ -97,3 +101,4 @@ if path:
     plot_path(grid, path)
 else:
     print("No path found")
+    plot_path(grid, [start, end])
