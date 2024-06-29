@@ -36,6 +36,9 @@
     python map.py
 ```
 
+Check the created 'route_map.html' and examine.
+![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/ce955f8c-5377-4ada-b26f-434e39d93028)
+
 
 
 
