@@ -37,7 +37,8 @@
 ```
 
 Check the created 'route_map.html' and examine.
-![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/ce955f8c-5377-4ada-b26f-434e39d93028)
+![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/65b02ed2-a1d5-4e64-814b-2eb9479c2503)
+
 
 
 
