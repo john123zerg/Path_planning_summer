@@ -40,7 +40,9 @@ Check the created 'route_map.html' and examine.
 ![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/65b02ed2-a1d5-4e64-814b-2eb9479c2503)
 
 
+## For real time animation
 
+Try the map_realtime.ipynb
 
 
 
