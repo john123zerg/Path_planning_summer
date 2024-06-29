@@ -17,5 +17,15 @@
  ```
 
 
+======================================================================================
+
+map route planning
+
+
+```bash
+    pip install folium matplotlib mapclassify geopandas networkx osmnx
+```
+
+
 
 https://docs.google.com/document/d/13q9abajl1ktYAUoRYwoUmOTtbzMNvIH3eMLMESsoABU/edit
