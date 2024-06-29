@@ -45,6 +45,16 @@ Check the created 'route_map.html' and examine.
 Try the map_realtime.ipynb
 
 
+==============================================================================
+
+
+
+# Traffic considered map route planning
+
+![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/628e6828-8c76-42aa-8008-413c9ebf7b07)
+
+
+
 
 
 https://docs.google.com/document/d/13q9abajl1ktYAUoRYwoUmOTtbzMNvIH3eMLMESsoABU/edit
