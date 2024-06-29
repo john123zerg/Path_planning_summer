@@ -23,7 +23,7 @@
 
 
 
-map route planning
+# map route planning
 
 
 
@@ -32,7 +32,9 @@ map route planning
 ```bash
     pip install folium matplotlib mapclassify geopandas networkx osmnx
 ```
-
+```bash
+    python map.py
+```
 
 
 
