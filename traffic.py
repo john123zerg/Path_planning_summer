@@ -12,10 +12,13 @@ end_location = (29.951468003220015, -95.33175141246198)    # IAH
 # Get the graph for the area around the starting location
 G = ox.graph_from_point(start_location, dist=25000, network_type='drive')
 
-# Function to add random traffic delay
+# Function to add random traffic delay, including complete blockage
 def add_traffic_delay(length):
-    # Simulate traffic delay as a random factor between 1.0 (no delay) and 1.5 (50% delay)
-    delay_factor = random.uniform(1.0, 1.5)
+    # 5% chance to completely block the road
+    if random.random() < 0.05:
+        delay_factor = float('inf')  # Representing a complete blockage
+    else:
+        delay_factor = random.uniform(1.0, 1.5)
     return length * delay_factor, delay_factor
 
 # Add traffic delays to the edges
@@ -62,8 +65,6 @@ m = gdf_edges.explore(color='gray', tiles='OpenStreetMap')
 norm = Normalize(vmin=1.0, vmax=1.5)
 cmap = cm.get_cmap('Reds')
 
-
-
 # Plot the shortest distance route edges
 shortest_distance_route_edges.explore(m=m, color='blue', legend=False)
 
@@ -81,5 +82,4 @@ start_marker.explore(m=m, color='green', marker_kwds={'icon': 'cloud', 'prefix':
 end_marker.explore(m=m, color='red', marker_kwds={'icon': 'flag', 'prefix': 'fa'}, legend=False)
 
 # Save the map to an HTML file
-m.save('route_map_with_traffic_comparison.html')
-
+m.save('route_map_with_super_traffic_comparison.html')
