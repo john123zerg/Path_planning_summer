@@ -51,9 +51,27 @@ Try the map_realtime.ipynb
 
 # Traffic considered map route planning
 
+
+```bash
+    python traffic.py
+```
+
 ![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/628e6828-8c76-42aa-8008-413c9ebf7b07)
 
 
+
+==============================================================================
+
+
+
+# Extra waypoints
+
+```bash
+    python extra_waypoint.py
+```
+
+
+![image](https://github.com/john123zerg/Path_planning_summer/assets/63462803/e91bb32a-39f4-4062-a936-a7df26b388b3)
 
 
 
